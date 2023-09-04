@@ -1,0 +1,73 @@
+show databases;
+
+use tcet_practicals;
+
+show tables;
+
+create table emp(
+	emp_id int,
+    emp_name varchar(50),
+    emp_sal int,
+    emp_doj int
+    );
+
+select * from emp;
+
+insert into emp
+values (1, 'Isha', 100, 30);
+
+insert into emp
+values (1, 'Divya', 1000, 2);
+
+insert into emp
+values (1, 'Aryan', 1000, 9);
+
+select emp_name, sum(emp_sal)*0.2
+as 'Increment'
+from emp
+group by emp_name;
+
+select emp_name, avg(emp_sal)
+as 'Average'
+from emp
+group by emp_name;
+
+select emp_name, count(emp_sal)
+as 'Count'
+from emp
+group by emp_name;
+
+select emp_name, min(emp_sal)
+as 'Minimum'
+from emp
+group by emp_name;
+
+select emp_name, max(emp_sal)
+as 'Maximum'
+from emp
+group by emp_name;
+
+select emp_name, sum(emp_sal)*0.2
+as 'Increment'
+from emp
+group by emp_name;
+
+select emp_name, sum(emp_sal)*0.2
+as 'Increment'
+from emp
+group by emp_name
+having emp_name like '%a';
+
+select emp_name, sum(emp_sal)*0.2
+as 'Increment'
+from emp
+group by emp_name
+having emp_name like '_i%';
+
+create table department (
+	dep_id int,
+    dep_name varchar(50)
+    );
+
+select * from department;
+
