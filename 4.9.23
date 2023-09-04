@@ -5,7 +5,7 @@ use tcet_practicals;
 show tables;
 
 create table emp(
-	emp_id int,
+    emp_id int,
     emp_name varchar(50),
     emp_sal int,
     emp_doj int
@@ -65,7 +65,7 @@ group by emp_name
 having emp_name like '_i%';
 
 create table department (
-	dep_id int,
+    dep_id int,
     dep_name varchar(50)
     );
 
