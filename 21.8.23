@@ -10,19 +10,19 @@ alter table student
 add primary key (stud_id);
 
 insert into student 
-values (5, 'Aditya Kirti', 18, 9082486599, 'TCET');
+values (1, 'Aditya Kirti', 18, 9082486599, 'TCET');
 
 insert into student 
-values (1, 'Divya Kesarkar', 18, 9326545325, 'TCET');
+values (2, 'Divya Kesarkar', 18, 9326545325, 'TCET');
 
 insert into student 
-values (2, 'Isha Kondurkar', 18, 9283733585, 'TCET');
+values (3, 'Isha Kondurkar', 18, 9283733585, 'TCET');
 
 insert into student 
-values (3, 'Aryan Kadam', 18, 8367293720, 'TCET');
+values (4, 'Aryan Kadam', 18, 8367293720, 'TCET');
 
 insert into student 
-values (4, 'Himanshu Jangid', 18, 9237868392, 'TCET');
+values (5, 'Himanshu Jangid', 18, 9237868392, 'TCET');
 
 select * from student;
 
